@@ -6,10 +6,11 @@ GET http://localhost:3000/items/1f66921c-ba62-4351-b378-46029b7fc925
 
 ### Post
 POST http://localhost:3000/items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBiODA0NTM1LTM3MzQtNGZlNy05ZTQyLWQ3NGRlODFiYjYzMyIsInVzZXJuYW1lIjoidGVzdHVzZXIyIiwiaWF0IjoxNjQxMzkwNTQwLCJleHAiOjE2NDEzOTQxNDB9.znSveygW6d8zhGozKS6I71hEDX7Y6XJKhf0rTZgRlRY
 Content-Type: application/json
 
 {
-  "name": "PC",
+  "name": "スマホ",
   "price": 50000,
   "description": "とても綺麗です"
 }

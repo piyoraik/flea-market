@@ -9,8 +9,8 @@ POST http://localhost:3000/items
 Content-Type: application/json
 
 {
-  "name": "PC",
-  "price": 50000,
+  "name": "",
+  "price": 0,
   "description": "とても綺麗です"
 }
 

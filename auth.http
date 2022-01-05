@@ -1,0 +1,9 @@
+### Post
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "testuser1",
+  "password": "test1234",
+  "status": "FREE"
+}

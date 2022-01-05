@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "username": "testuser4",
+  "username": "testuser1",
   "password": "test1234",
   "status": "FREE"
 }
@@ -13,6 +13,6 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "username": "testuser4",
+  "username": "testuser1",
   "password": "test1234"
 }

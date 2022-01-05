@@ -7,10 +7,3 @@ export interface Item {
   description: string;
   status: ItemStatus;
 }
-
-export interface createItem {
-  id: string;
-  name: string;
-  price: number;
-  description: string;
-}

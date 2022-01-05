@@ -7,9 +7,9 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { createItem, Item } from './item.model';
+import { CreateItemDto } from './dto/createItem.dto';
+import { Item } from './item.model';
 import { ItemsService } from './items.service';
-import { ItemStatus } from './itemStatus.enum';
 
 @Controller('items')
 export class ItemsController {
@@ -26,15 +26,8 @@ export class ItemsController {
   }
 
   @Post()
-  create(@Body() item: createItem): Item {
-    const createItem: Item = {
-      id: item.id,
-      name: item.name,
-      price: item.price,
-      description: item.description,
-      status: ItemStatus.ON_SALE,
-    };
-    return this.itemsService.create(createItem);
+  create(@Body() item: CreateItemDto): Item {
+    return this.itemsService.create(item);
   }
 
   @Put(':id')

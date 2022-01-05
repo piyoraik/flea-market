@@ -1,30 +1,33 @@
-import { ItemStatus } from "src/items/itemStatus.enum";
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import { User } from "./user.entity";
+import { ItemStatus } from 'src/items/itemStatus.enum';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { User } from './user.entity';
 
 @Entity()
 export class Item {
   @PrimaryGeneratedColumn('uuid')
-  id: string
+  id: string;
 
   @Column()
-  name: string
+  name: string;
 
   @Column()
-  price: number
+  price: number;
 
   @Column()
-  description: string
+  description: string;
 
   @Column()
-  status: ItemStatus
+  status: ItemStatus;
 
   @Column()
-  createdAt: string
+  createdAt: string;
 
   @Column()
-  updatedAt: string
+  updatedAt: string;
 
   @ManyToOne(() => User, (user) => user.items)
-  user: User
+  user: User;
+
+  @Column()
+  userId: string;
 }

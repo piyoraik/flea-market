@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### Update
-PUT http://localhost:3000/items/test2
+PUT http://localhost:3000/items/1f66921c-ba62-4351-b378-46029b7fc925
 
 ### Delete
-DELETE http://localhost:3000/items/test2
+DELETE http://localhost:3000/items/1f66921c-ba62-4351-b378-46029b7fc925

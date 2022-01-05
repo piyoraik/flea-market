@@ -2,15 +2,15 @@
 GET http://localhost:3000/items
 
 ### findById
-GET http://localhost:3000/items/cf98d4ac-81c4-4b42-8a68-1ca514e9169a
+GET http://localhost:3000/items/ae0df600-ca25-4a8e-a297-201f1f31954b
 
 ### Post
 POST http://localhost:3000/items
 Content-Type: application/json
 
 {
-  "name": "",
-  "price": 0,
+  "name": "PC",
+  "price": 50000,
   "description": "とても綺麗です"
 }
 

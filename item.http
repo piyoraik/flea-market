@@ -1,0 +1,22 @@
+### GetAll
+GET http://localhost:3000/items
+
+### findById
+GET http://localhost:3000/items/test2
+
+### Post
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+  "id": "test2",
+  "name": "PC",
+  "price": 50000,
+  "description": "とても綺麗です"
+}
+
+### Update
+PUT http://localhost:3000/items/test2
+
+### Delete
+DELETE http://localhost:3000/items/test2

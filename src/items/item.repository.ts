@@ -1,5 +1,5 @@
-import { Item } from 'src/entities/item.entity';
-import { User } from 'src/entities/user.entity';
+import { Item } from '../entities/item.entity';
+import { User } from '../entities/user.entity';
 import { EntityRepository, Repository } from 'typeorm';
 import { CreateItemDto } from './dto/createItem.dto';
 import { ItemStatus } from './itemStatus.enum';
@@ -15,10 +15,10 @@ export class ItemRepository extends Repository<Item> {
       status: ItemStatus.ON_SALE,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
-      user
+      user,
     });
-    
-    await this.save(item)
-    return item
+
+    await this.save(item);
+    return item;
   }
 }
